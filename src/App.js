@@ -1,21 +1,29 @@
 
 import './App.css';
-import Clock from './components/Clock';
-import { useState } from 'react';
+// import Clock from './components/Clock';
+// import { useState } from 'react';
+import Blog from './components/Blog';
 
 function App() {
-  const [flag, setFlag] = useState(true);
+// const [flag, setFlag] = useState(true);
+
+const posts = [
+  {
+    id: 1,
+    title: "hello",
+    content: "welcome",
+  },
+  {
+    id: 2,
+    title: "install",
+    content: "install app",
+  },
+];
 
 
-const toggle = () => { 
-  console.log ("Toggle Clicked");
-  setFlag (!flag); 
-  };
   return ( 
     <>
-      <button onClick= {toggle}>Toggle Clock Component</button>
-      {flag ? <Clock /> : "Clock Off"}
-  
+      <Blog posts={posts}/>
     </>
   );
 }
