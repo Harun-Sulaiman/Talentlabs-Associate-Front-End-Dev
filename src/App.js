@@ -1,29 +1,14 @@
 
-import './App.css';
-// import Clock from './components/Clock';
 // import { useState } from 'react';
-import Blog from './components/Blog';
+import './App.css';
+import LoginControl from './components/LoginControl';
 
 function App() {
-// const [flag, setFlag] = useState(true);
-
-const posts = [
-  {
-    id: 1,
-    title: "hello",
-    content: "welcome",
-  },
-  {
-    id: 2,
-    title: "install",
-    content: "install app",
-  },
-];
-
+  // const [flag, setFlag] = useState(true);
 
   return ( 
     <>
-      <Blog posts={posts}/>
+      <LoginControl />
     </>
   );
 }
