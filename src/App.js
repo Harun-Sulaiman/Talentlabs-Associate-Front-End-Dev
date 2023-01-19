@@ -1,14 +1,13 @@
 
 // import { useState } from 'react';
 import './App.css';
-import LoginControl from './components/LoginControl';
+import ClockControl from './components/ClockControl';
 
 function App() {
-  // const [flag, setFlag] = useState(true);
 
   return ( 
     <>
-      <LoginControl />
+      <ClockControl />
     </>
   );
 }
